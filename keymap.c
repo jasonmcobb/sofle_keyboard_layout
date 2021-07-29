@@ -19,7 +19,9 @@ enum custom_keycodes {
     KC_NXTWD,
     KC_LSTRT,
     KC_LEND,
-    KC_DLINE
+    KC_DLINE,
+    KC_BSPC_DEL,
+    KC_LAYER
 };
 
 
