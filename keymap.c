@@ -167,7 +167,7 @@ static const char PROGMEM mac_logo[] = {
 /* Smart Backspace Delete */
 
 bool shift_held = false;
-static uint16_t held_shift = 0;
+//static uint16_t held_shift = 0;
 
 /* KEYBOARD PET START */
 
@@ -404,7 +404,7 @@ static void print_status_narrow(void) {
 
     // Print current layer
     oled_set_cursor(0,5);
-    oled_write_ln_P(PSTR("LAYER"), false);
+    oled_write("LAYER", false);
     oled_set_cursor(0,6);
 
     switch (get_highest_layer(layer_state)) {
@@ -642,7 +642,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 #ifdef ENCODER_ENABLE
 
-void encoder_update_user(uint8_t index, bool clockwise) {
+bool encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (clockwise) {
             tap_code(KC_VOLU);
