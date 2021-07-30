@@ -1,4 +1,4 @@
-# sofle_keyboard_layout
+# My Sofle Keyboard
 My layout for the sofle keyboard, will eventually update this with a screenshot of the layout.
 
 ## Compiling Notes:
@@ -19,12 +19,23 @@ My layout for the sofle keyboard, will eventually update this with a screenshot 
 Use the documentation on QMK's site for this, looks relatively easy to accomplish.
 
 #### Shortcut for folding code to definitions:
+
 - CMD+ALT+-
-- Command should be something like `SendString(SST(CMD)SST(ALT)"-")m`
+  - Command should be something like `SendString(SST(CMD)SST(ALT)"-")m`
+
 
 ### Key Layout Changes:
 
+#### Keys:
+
 - Flip the location of () and []
+
+#### Rotary Encoders:
+
+- Use a rotary encoder to change tabs in Chrome, VS Code, and Rider (need to see if the same keyboard shortcut works in other places.)
+  - ALT+TAB == Forward
+  - ALT+SHIFT+TAB == Backwards
+  -
 
 ### Other Changes:
 
